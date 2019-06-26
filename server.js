@@ -84,7 +84,7 @@ passport.use(
     })
 )
 
-app.use(express.static(path.join(__dirname, 'client/public')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(session({ secret: 'OFofofppajj', resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
